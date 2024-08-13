@@ -27,8 +27,8 @@ void	stack_add(t_stack **a, int n)
 	}
 	else
 	{
-		stack_last_node(*a)->next = new_node;
 		new_node->prev = stack_last_node(*a);
+		stack_last_node(*a)->next = new_node;
 	}
 }
 
